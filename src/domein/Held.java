@@ -1,39 +1,39 @@
 
 package domein;
 
+import java.util.List;
+
 /**
  *
  * @author Anke
  */
 public class Held 
 {
-    private int idheld;
+    private int waarde;
     private int kracht;
     private int verdediging;
     private int snelheid;
     private int alertheid;
     private String naam;
-    private int iditems;
+    private String image;
+    private List<Item> items;
 
-    public Held (int idheld, int kracht, int verdediging, 
+    public Held()
+    {
+        
+    }
+    
+    public Held (int kracht, int verdediging, 
             int snelheid, int alertheid, String naam, 
             int iditems) 
     {
-        this.idheld = idheld;
+       
         this.kracht = kracht;
         this.verdediging = verdediging;
         this.snelheid = snelheid;
         this.alertheid = alertheid;
         this.naam = naam;
-        this.iditems = iditems;
-    }
-    
-    public int getIdheld() {
-        return idheld;
-    }
-
-    public void setIdheld(int idmonster) {
-        this.idheld = idmonster;
+        
     }
 
     public int getKracht() {
@@ -76,12 +76,30 @@ public class Held
         this.naam = naam;
     }
 
-    public int getIditems() {
-        return iditems;
+    public String getImage() {
+        return image;
     }
 
-    public void setIditems(int iditems) {
-        this.iditems = iditems;
+    public List<Item> getItems() {
+        return items;
     }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    public int getWaarde() {
+        return waarde;
+    }
+
+    public void setWaarde(int waarde) {
+        this.waarde = waarde;
+    }
+
+    
     
 }

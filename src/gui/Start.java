@@ -2,6 +2,7 @@ package gui;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
@@ -18,6 +19,7 @@ public class Start extends Application {
         
         primaryStage.setTitle("Munchkin");
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(new Image("resources/thumbnail.png"));
         primaryStage.show();
     }
 
